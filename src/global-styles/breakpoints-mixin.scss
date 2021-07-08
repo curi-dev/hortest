@@ -1,6 +1,6 @@
   @mixin for-viewport($viewport) {
   @if $viewport == phone-only {
-    @media (max-width: 320px) { @content; }
+    @media (max-width: 325px) { @content; }
   } @else if $viewport == tablet-only {
     @media (max-width: 720px) { @content; }
   } @else if $viewport == desktop-only {
