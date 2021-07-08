@@ -13,27 +13,15 @@ const Header = () => {
     return (
         <header className={classes.container}>
             <div>
-                logo
+                <span>Hortifrutti</span>
+                <div />
             </div>
             <div>
                 <span>Bem vindo(a) ao mundo de cores e sabores</span>
-                {
-                    currentViewport > 320 ? (
-                        <div>
-                            <button href="#">Mudar loja</button>
-                            <span>Fazendo pedidos na loja Tijuca</span>
-                        </div>
-                    ) : (
-                        <>
-                            <div>
-                                <button href="/">Mudar loja</button>
-                            </div>
-                            <div>
-                                <span>Fazendo pedidos na loja Tijuca</span>
-                            </div>
-                        </>
-                    )
-                }
+                <div>
+                    <button>Mudar loja</button>
+                    <span>Fazendo pedidos na loja Tijuca</span>
+                </div>
             </div>
         </header>
     )

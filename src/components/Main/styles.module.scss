@@ -4,14 +4,15 @@ $primary: #dbd0c6;
 $text: #000000;
 $buttonPrimaryColor: #00733f;
 
+
 .title {
     max-width: 1080px;
     min-width: 320px;
-    margin: 0 auto;
+    margin: 86px auto 0;
+    padding: 1.2rem;
 
     font-size: 0.8rem;
 
-    margin-bottom: 1rem;
     z-index: 7;
 
     @include for-viewport(phone-only) {        
@@ -56,31 +57,33 @@ $buttonPrimaryColor: #00733f;
 
 .container {
     max-width: 1080px;
-    height: 370px;
     min-width: 320px;
+    height: 480px;
     margin: 0 auto;
+    padding: 1.2rem;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2.7%;
     
     @include for-viewport(tablet-only) {        
-        grid-template-areas: 
-        "topleft topright"
-        "extrasection extrasection"
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        margin: 0 auto;
     }
-    
-    @include for-viewport(phone-only) {
-        display: flex;
-        flex-direction: column;
+
+    @include for-viewport(phone-only) {        
+        height: 200px;
     }
 
     section:first-of-type {
         border: 3px solid $primary;
-        padding: 3.4em;
+        padding: 2.9em;
 
         display: flex;
         align-items: flex-end;
+
 
         @include for-viewport(phone-only) {
             margin-bottom: 1.1rem;
@@ -88,6 +91,7 @@ $buttonPrimaryColor: #00733f;
         }
 
         @include for-viewport(tablet-only) {        
+            margin-bottom: 1.5rem;
             padding: 1.7rem;
         }
 
@@ -156,37 +160,17 @@ $buttonPrimaryColor: #00733f;
     }
 
     section:nth-child(2) {
+        max-height: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         column-gap: 5%;
         row-gap: 7%;
 
-        @include for-viewport(tablet-only) {
-            grid-template-columns: 1fr;
-        }
-
-        > div {
-            border: 1px dotted $primary;
-            padding: 1.4rem;
+        @include for-viewport(phone-only) {
+            display: flex;
+            flex-direction: column;
         }
         
-    }
-}
-
-.extraSection {
-    grid-area: extrasection;
-    width: 100%;
-    height: 87px;
-    margin-top: 1rem;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2%;
-
-    > div {
-        height: auto;
-        padding: 0.7rem;
-        border: 1px dotted $primary;
     }
 }

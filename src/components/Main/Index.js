@@ -76,8 +76,12 @@ const Main = () => {
                     </div>
                 </section>
                 <section>
-                    {
-                        (currentViewport >= 720 || currentViewport < 320) ? (
+                    <CustomBox {...infoStrategy["orders"]} />
+                    <CustomBox {...infoStrategy["gifts"]} />
+                    <CustomBox  {...infoStrategy["restaurant"]} />
+                    <CustomBox {...infoStrategy["signIn"]} />
+                    {/* {
+                        (currentViewport >= 800 || currentViewport < 430) ? (
                             <>
                                 <CustomBox {...infoStrategy["orders"]} />
                                 <CustomBox {...infoStrategy["gifts"]} />
@@ -90,16 +94,16 @@ const Main = () => {
                                 <CustomBox {...infoStrategy["gifts"]} />
                             </>
                         )
-                    }
+                    } */}
                 </section>
-                {
-                    (currentViewport < 720 && currentViewport > 320) && (
+                {/* {
+                    (currentViewport < 800 && currentViewport > 430) && (
                         <section className={classes.extraSection}>
                             <CustomBox {...infoStrategy["restaurant"]} isExtra />
                             <CustomBox {...infoStrategy["signIn"]} isExtra />
                         </section>
                     )
-                }
+                } */}
             </main>
         ]
     )
