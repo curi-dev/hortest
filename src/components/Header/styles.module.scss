@@ -13,9 +13,6 @@ $secondary: #f1ddc8;
 
     margin-bottom: 5.2rem;
 
-    a {
-        color: red;
-    }
 
     > div:nth-child(1) {
         width: 100%;       
@@ -34,6 +31,13 @@ $secondary: #f1ddc8;
 
         flex: 1;
         padding: 0.37rem;
+
+        button {
+            color: red;
+            border: none;
+            outline: none;
+            background-color: transparent;
+        }
 
         @include for-viewport(tablet-only) {        
             flex-direction: column;

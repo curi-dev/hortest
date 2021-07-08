@@ -20,13 +20,13 @@ const Header = () => {
                 {
                     currentViewport > 320 ? (
                         <div>
-                            <a href="#">Mudar loja</a>
+                            <button href="#">Mudar loja</button>
                             <span>Fazendo pedidos na loja Tijuca</span>
                         </div>
                     ) : (
                         <>
                             <div>
-                                <a href="/">Mudar loja</a>
+                                <button href="/">Mudar loja</button>
                             </div>
                             <div>
                                 <span>Fazendo pedidos na loja Tijuca</span>
