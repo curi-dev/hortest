@@ -26,7 +26,7 @@ const Header = () => {
                     ) : (
                         <>
                             <div>
-                                <a href="#">Mudar loja</a>
+                                <a href="/">Mudar loja</a>
                             </div>
                             <div>
                                 <span>Fazendo pedidos na loja Tijuca</span>
