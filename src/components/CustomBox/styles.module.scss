@@ -1,0 +1,40 @@
+@import '../../global-styles/breakpoints-mixin.scss';
+
+$buttonsSecondaryColor: #54412F;
+
+.container {
+    
+    h4 {
+        margin-bottom: 0.37rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+
+    }
+
+    footer small {
+        color: #00733f;
+        margin-left: 0.5rem;       
+    }
+
+    footer button {
+        background-color: $buttonsSecondaryColor;
+        outline: none;
+        border: none;
+
+        width: 50%;
+        padding: 0.4rem;
+        
+        color: #FFF;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        font-weight: 500;
+
+        transition: filter 0.2s;
+        &:hover {
+            filter: brightness(0.8)
+        }
+    }
+}
